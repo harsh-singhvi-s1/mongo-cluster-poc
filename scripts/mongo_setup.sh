@@ -24,6 +24,13 @@ mongosh --host mongo1:27017 <<EOF
         "priority": 1,
         "votes": 1
       }
+      },
+      {
+        "_id": 3,
+        "host": "mongo4:27020",
+        "priority": 1,
+        "votes": 1
+      }
     ]
   };
   rs.initiate(cfg);

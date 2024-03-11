@@ -2,3 +2,10 @@
 
 ## commands
 - `mongosh --port 27017`
+
+
+- Create big files `head -c 4294967296 /dev/random > bigfile.dat` or `head -c <numbytes> /dev/random > bigfile.dat`
+- get sha of the file ` md5 files/bigfile.dat`
+
+
+838860800 800MB
