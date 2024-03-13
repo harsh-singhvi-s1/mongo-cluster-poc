@@ -9,7 +9,7 @@ async function main() {
         return;
     }
 
-    const client = new MongoClient(argv[2]+"/?directConnection=true"    );
+    const client = new MongoClient(argv[2]+"/?directConnection=true");
 
     await client.connect();
     console.log("Connected successfully to server");

@@ -23,7 +23,6 @@ mongosh --host mongo1:27017 <<EOF
         "host": "mongo3:27019",
         "priority": 1,
         "votes": 1
-      }
       },
       {
         "_id": 3,

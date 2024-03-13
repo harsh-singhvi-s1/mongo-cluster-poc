@@ -26,15 +26,15 @@ services:
         # volumes:
         # - mongo3-data:/data/db
         entrypoint: ["mongod", "--replSet", "mongo-cluster-replicaset", "--bind_ip_all", "--port", "27019"] # "--bind_ip", "localhost,mongo3"
-    mongo4:
-        image: mongo
-        hostname: mongo4
-        container_name: mongo4
-        ports:
-            - 27020:27020
-        # volumes:
-        # - mongo3-data:/data/db
-        entrypoint: ["mongod", "--replSet", "mongo-cluster-replicaset", "--bind_ip_all", "--port", "27020"] # "--bind_ip", "localhost,mongo3"
+    # mongo4:
+    #     image: mongo
+    #     hostname: mongo4
+    #     container_name: mongo4
+    #     ports:
+    #         - 27020:27020
+    #     # volumes:
+    #     # - mongo3-data:/data/db
+    #     entrypoint: ["mongod", "--replSet", "mongo-cluster-replicaset", "--bind_ip_all", "--port", "27020"] # "--bind_ip", "localhost,mongo3"
     mongosetup:
         image: mongo
         depends_on:
